@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create</title>
+  </head>
+  <body>
+    <h3>Edit your listing</h3>
+    <form method="POST" action="/listings/<%=listing._id%>?_method=PUT">
+      <input value="<%= listing.title %>" type="text" name="title" id="" />
+      <br />
+      <br />
+      <input
+        value="<%= listing.description %>"
+        type="text"
+        name="description"
+        id=""
+      />
+      <br />
+      <br />
+      <input value="<%= listing.image.url %>" type="text" name="image" id="" />
+      <br />
+      <br />
+      <input value="<%= listing.price %>" type="number" name="price" id="" />
+      <br />
+      <br />
+      <input value="<%= listing.country %>" type="text" name="country" id="" />
+      <br />
+      <br />
+      <input
+        value="<%= listing.location %>"
+        type="text"
+        name="location"
+        id=""
+      />
+      <br />
+      <br />
+      <button>Add</button>
+    </form>
+  </body>
+</html>
