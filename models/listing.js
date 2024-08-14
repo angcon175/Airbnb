@@ -8,12 +8,9 @@ const listingSchema = new Schema({
   },
   description: String,
   image: {
-    url: {
-      type: String,
-      default: "https://images.app.goo.gl/E2zB9ReAESQvm46v9",
-      set: (v) =>
-        v === "" ? "https://images.app.goo.gl/E2zB9ReAESQvm46v9" : v,
-    },
+    type: String,
+    default: "https://images.app.goo.gl/E2zB9ReAESQvm46v9",
+    set: (v) => (v === "" ? "https://images.app.goo.gl/E2zB9ReAESQvm46v9" : v),
   },
   price: Number,
   location: String,
