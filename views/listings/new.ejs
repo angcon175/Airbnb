@@ -13,18 +13,19 @@
           id=""
           required
         />
+        <div class="valid-feedback">Title looks good!</div>
       </div>
 
       <div class="mb-3">
         <label for="description" class="form-label">Description</label>
         <textarea
           placeholder="give a description"
-          type="text"
           name="description"
-          id=""
           class="form-control"
           required
-        ></textarea>
+        >
+        </textarea>
+        <div class="invalid-feedback">Enter a short description</div>
       </div>
       <div class="mb-3">
         <label for="image" class="form-label">Image</label>
@@ -42,11 +43,11 @@
           <input
             class="form-control"
             placeholder="enter price"
-            type="number"
             name="price"
             id=""
             required
           />
+          <div class="invalid-feedback">Please enter a valid price</div>
         </div>
         <div class="mb-3 col-md-8">
           <label for="country" class="form-label">Country</label>
@@ -58,6 +59,7 @@
             id=""
             required
           />
+          <div class="invalid-feedback">Country must be valid</div>
         </div>
       </div>
 
@@ -71,6 +73,7 @@
           id=""
           required
         />
+        <div class="invalid-feedback">Location must be valid</div>
       </div>
       <div class="mb-3">
         <button class="btn btn-dark add-btn">Add</button>
